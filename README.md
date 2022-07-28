@@ -4,7 +4,7 @@ Stress-tester for algo studies
 Prune - потому что чернослив, ну и потому что он как въедливый переводится
 %no trolling just facts
 
-![Chernosliv lol](https://hi-chef.ru/product/chernosliv/ "Chernosliv lol")
+![Chernosliv lol](https://resizer.mail.ru/p/6cc532de-30e1-53d6-b8ab-98716b47f07e/AAAcwE8vnrkJJDkvwWNhDBas77vEzSbsOHNOXhu8K--Cz_y5ZV-9VnLRcorzGiE2NyYc8bw8Bhl6Rc6zf3KJjY4lbhM.jpg "Chernosliv lol")
 
 Идея в том что этот прун ахахаха лежит в папке с контестами по алгосам
 Ты ему прописываешь какую папку смотреть и какое название файла смотреть
