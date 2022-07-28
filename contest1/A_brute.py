@@ -1,6 +1,3 @@
-from re import A
-
-
 def bubble_sort(a):
     n = len(a)
     all_good = True
