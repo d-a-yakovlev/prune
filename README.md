@@ -4,6 +4,8 @@ Stress-tester for algo studies
 Prune - потому что чернослив, ну и потому что он как въедливый переводится
 %no trolling just facts
 
+<img src="https://hi-chef.ru/product/chernosliv/" alt="Chernosliv lol">
+
 Идея в том что этот прун ахахаха лежит в папке с контестами по алгосам
 Ты ему прописываешь какую папку смотреть и какое название файла смотреть
 
