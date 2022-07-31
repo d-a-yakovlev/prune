@@ -1,5 +1,4 @@
-import sys
-
+import argparse
 from src_prune.base_prune import Prune
 
 '''
@@ -8,15 +7,18 @@ from src_prune.base_prune import Prune
 
 Запуск будет следующий python prune.py contest1 A
 '''
-
-_, dir_name, task_name = sys.argv
+parser = argparse.ArgumentParser()
+parser.add_argument('-d', '--directory', help='', required=True)
+parser.add_argument('-f', '--file', help='', required=True)
+parser.add_argument('-s', '--solution', help='', action='store_true')
+args = parser.parse_args()
 
 task_data_name = dir_name + "/" + task_name + "_data.txt"
 brute_solution = dir_name + "/" + task_name + "_brute.py"
 opt_solution   = dir_name + "/" + task_name + "_opt.py"
 
 data_sep = "/* end */"
-case_data_name = dir_name + "/" + task_name + "_case_data.txt"
+case_data_name = dir_name + "/" + task_name + "/"+_case_data.txt"
 
 tester = Prune(case_data_name, brute_solution, opt_solution)
 

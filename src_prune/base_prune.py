@@ -4,8 +4,10 @@ import os
 Класс как пространство имён
 статичных методов для валидации
 '''
+
+
 class Prune:
-    
+
     '''
     Конструктор
     Принимает:
@@ -16,9 +18,7 @@ class Prune:
     def __init__(self, case_data_name, brute_solution, opt_solution):
         self.case_data_name = case_data_name
         self.brute_solution = brute_solution
-        self.opt_solution = opt_solution        
-
-    
+        self.opt_solution = opt_solution
     '''
     Классический подход
     Принимает:
@@ -36,7 +36,7 @@ class Prune:
         fh.close()
 
         brute_ans = os.popen(f"python {self.brute_solution} < {self.case_data_name}").readlines()
-        opt_ans   = os.popen(f"python {self.opt_solution} < {self.case_data_name}").readlines()
+        opt_ans = os.popen(f"python {self.opt_solution} < {self.case_data_name}").readlines()
 
         if brute_ans == opt_ans:
             print (f"Test {test_count} : OK")
