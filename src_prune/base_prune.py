@@ -26,19 +26,33 @@ class Prune:
     - test_count - номер теста
     '''
     def classic_check (self, data_arr, test_count):
-        fh = open(self.case_data_name, "w")
-        fh.close()
 
-        fh = open(self.case_data_name, "a")
-        for data in data_arr:
-            fh.write(data)
-        
-        fh.close()
+        with open(self.case_data_name, 'w') as fh:
+            for data in data_arr:
+                fh.write(data)
 
-        brute_ans = os.popen(f"python {self.brute_solution} < {self.case_data_name}").readlines()
-        opt_ans = os.popen(f"python {self.opt_solution} < {self.case_data_name}").readlines()
+        brute_ans = os.popen(f"python3 {self.brute_solution} < {self.case_data_name}").readlines()
+        opt_ans = os.popen(f"python3 {self.opt_solution} < {self.case_data_name}").readlines()
 
         if brute_ans == opt_ans:
             print (f"Test {test_count} : OK")
         else:
-            print (f"Test {test_count} : Not OK \n  {data_arr}")
+            f = open(wrong.txt, 'a')
+            print (f"Test {test_count} : Not OK \n  "
+                   f"{data_arr}\n "
+                   f"correct answer: {brute_ans}\n "
+                   f"wrong answer:{opt_ans}\n", file=f)
+            f.close()
+
+    def check_with_solution(self,  data_arr, test_count):
+        with open(self.case_data_name, 'w') as fh:
+            for data in data_arr:
+                fh.write(data)
+
+        opt_ans = os.popen(f"python3 {self.opt_solution} < {self.case_data_name}").readlines()
+
+        if brute_ans == opt_ans:
+            print(f"Test {test_count} : OK")
+        else:
+            print(f"Test {test_count} : Not OK \n  {data_arr}")
+
