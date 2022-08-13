@@ -37,7 +37,7 @@ class Prune:
         if brute_ans == opt_ans:
             print (f"Test {test_count} : OK")
         else:
-            f = open(f'{directory}/wrong.txt', 'a')
+            f = open(f'{self.directory}/wrong.txt', 'a')
             print (f"Test {test_count} : Not OK \n  "
                    f"{data_arr}\n "
                    f"correct answer: {brute_ans}\n "
@@ -48,7 +48,6 @@ class Prune:
 
         data_str = '\n'.join(data_arr)
         opt_ans = os.popen(f"echo {data_str} | python3 {self.opt_solution}").readlines()
-        brute_ans =
 
         if brute_ans == opt_ans:
             print(f"Test {test_count} : OK")
