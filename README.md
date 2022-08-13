@@ -19,4 +19,5 @@ Prune - потому что чернослив, ну и потому что он
 
 
 <h2>CTO aka Lady_BUG</h2>
-![Chernosliv lol](https://papik.pro/uploads/posts/2021-12/thumbs/1639459580_2-papik-pro-p-milie-risunki-geroev-2.jpg "Chernosliv lol")
+
+<img src="https://papik.pro/uploads/posts/2021-12/thumbs/1639459580_2-papik-pro-p-milie-risunki-geroev-2.jpg" alt="CTO">
